@@ -31,7 +31,7 @@ function fetchEnergyStatus() {
 }
 //fetchEnergyStatus()
 
-const socket = io("http://192.168.0.7:9000");
+const socket = io("http://127.0.0.1:9001");
 socket.on("message", function (data) {
   Object.assign(energy, data);
   console.log(data);
